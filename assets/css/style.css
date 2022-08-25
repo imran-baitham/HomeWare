@@ -565,7 +565,7 @@ a {
   margin-bottom: 30px;
 }
 
-/*=============== NEW ===============*/
+/*=============== New ===============*/
 
 .new__card {
   position: relative;
@@ -579,6 +579,7 @@ a {
   margin-top: 25px;
   cursor: pointer;
   box-shadow: var(--shadow-1);
+  margin-bottom: 2.5rem;
 }
 
 .new__tag {
@@ -622,6 +623,68 @@ a {
   background-color: var(--orange-soda);
 }
 
+
+/*=============== Product ===============*/
+.container_outer {
+  width: 95%;
+  margin: 0% auto;
+}
+
+.product__card {
+  position: relative;
+  text-align: center;
+  background-color: var(--body-color);
+  color: var(--text-color);
+  margin-bottom: 10px;
+  border: 1px solid var(--border-color);
+  overflow-y: hidden;
+  transition: 0.3s;
+  margin-top: 25px;
+  cursor: pointer;
+  box-shadow: var(--shadow-1);
+}
+
+.product__tag {
+  background-color: var(--orange-soda);
+  padding: 3px 9px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: var(--font-medium);
+  font-size: var(--small-font-size);
+  position: absolute;
+  top: 0.25rem;
+  right: 0.25rem;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.product__img {
+  height: 50vh;
+  width: 100%;
+}
+
+.product__data {
+  padding: 15px 15px;
+  background-color: black;
+  color: white;
+}
+
+.product__title {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-bold);
+}
+
+.product__title {
+  text-transform: uppercase;
+  margin-bottom: var(--mb-0-75);
+}
+
+/* swiper ration buttonsmall */
+
+.swiper-pagination span {
+  background-color: var(--orange-soda);
+}
+
 #left {
   display: flex;
   justify-content: space-between;
@@ -629,9 +692,6 @@ a {
   align-items: center;
   user-select: none;
   padding-bottom: var(--mb-2);
-  z-index: 1000;
-  width: 170px;
-  margin: 0% auto;
 }
 
 #left .bx-left-arrow-alt {
@@ -1443,6 +1503,11 @@ button:active,
 
 @media (min-width: 768px) {
 
+  .product__img {
+    height: 30vh;
+    width: 100%;
+  }
+
   /**
    * CUSTOM PROPERTY
    */
@@ -1762,6 +1827,12 @@ button:active,
 /**
  * responsive for larger than 1200px screen
  */
+
+@media (max-width: 700px) {
+  #left {
+    display: none;
+  }
+}
 
 @media (min-width: 1200px) {
 
