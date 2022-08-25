@@ -22,16 +22,160 @@
 
 <body>
     <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-        <nav class="container nav">
-            <h2 class="header_theme">Responsive website | <b>Theme</b></h2>
-        </nav>
+    <header class="header" data-header>
+
+        <div class="overlay" data-overlay></div>
+
+        <div class="header-top">
+            <div class="container">
+
+                <ul class="header-top-list">
+
+                    <li>
+                        <a href="mailto:info@homeverse.com" class="header-top-link">
+                            <ion-icon name="mail-outline"></ion-icon>
+
+                            <span>e2ehotalsupplies@gmail.com</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="header-top-link">
+                            <ion-icon name="location-outline"></ion-icon>
+
+                            <address>502, China Market, Rawalpandi</address>
+                        </a>
+                    </li>
+
+                </ul>
+
+                <div class="wrapper">
+                    <ul class="header-top-social-list">
+
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="header-top-social-link">
+                                <ion-icon name="logo-pinterest"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <button class="header-top-btn">View Listing</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+
+                <a href="#" class="logo">
+                    <h1>E2eHotelWare</h1>
+                </a>
+
+                <nav class="navbar" data-navbar>
+
+                    <div class="navbar-top">
+
+                        <a href="#" class="logo">
+                            <img src="./assets/images/logo.png" alt="Homeverse logo">
+                        </a>
+
+                        <button class="nav-close-btn" data-nav-close-btn aria-label="Close Menu">
+                            <ion-icon name="close-outline"></ion-icon>
+                        </button>
+
+                    </div>
+
+                    <div class="navbar-bottom">
+                        <ul class="navbar-list">
+
+                            <li>
+                                <a href="#home" class="navbar-link" data-nav-link>Home</a>
+                            </li>
+
+                            <li>
+                                <a href="#about" class="navbar-link" data-nav-link>About</a>
+                            </li>
+
+                            <li>
+                                <a href="#service" class="navbar-link" data-nav-link>Service</a>
+                            </li>
+
+                            <li>
+                                <a href="#property" class="navbar-link" data-nav-link>Property</a>
+                            </li>
+
+                            <li>
+                                <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+                            </li>
+
+                            <li>
+                                <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </nav>
+
+                <div class="header-bottom-actions">
+
+                    <button class="header-bottom-actions-btn" aria-label="Search">
+                        <ion-icon name="search-outline"></ion-icon>
+
+                        <span>Search</span>
+                    </button>
+
+                    <button class="header-bottom-actions-btn" aria-label="Profile">
+                        <ion-icon name="person-outline"></ion-icon>
+
+                        <span>Profile</span>
+                    </button>
+
+                    <button class="header-bottom-actions-btn" aria-label="Cart">
+                        <ion-icon name="cart-outline"></ion-icon>
+
+                        <span>Cart</span>
+                    </button>
+
+                    <button class="header-bottom-actions-btn" data-nav-open-btn aria-label="Open Menu">
+                        <ion-icon name="menu-outline"></ion-icon>
+
+                        <span>Menu</span>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
     </header>
 
+
+    <!-- <i class='bx bxl-facebook-circle'></i> -->
     <!--=============== MAIN ===============-->
     <main class="main">
         <!--=============== HOME ===============-->
-        <section class="home section" id="home">
+        <!-- <section class="home section" id="home">
             <div>
                 <i class='bx bxs-like bx-spin'></i>
                 <i class='bx bxs-like bx-tada'></i>
@@ -53,11 +197,12 @@
                 <i class='bx bxs-like bx-fade-down-hover'></i>
             </div>
             <a href="https://api.whatsapp.com/send/?phone=923554529168&text&app_absent=0">Imran whatsapp</a>
-        </section>
+        </section> -->
 
         <!--=============== ABOUT ===============-->
+        <!--==================== NEW ====================-->
         <section class="about section" id="about">
-            <!--==================== NEW ====================-->
+
             <section class="new section container" id="new">
                 <h2 class="section__title">
                     New Arrivals
@@ -126,6 +271,10 @@
                             </article>
                         </div>
                         <div class="swiper-pagination" id="ration"></div>
+                        <div id="left">
+                            <!-- <i class="bx bx-left-arrow-alt"></i> -->
+                            <!-- <i class="bx bx-right-arrow-alt"></i> -->
+                        </div>
                     </div>
                 </div>
             </section>
@@ -133,7 +282,45 @@
 
         <!--=============== SKILLS ===============-->
         <section class="skills section" id="skills">
-
+            <div class="container">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ad dignissimos iure animi
+                    libero, accusamus laudantium reiciendis porro ipsa veritatis natus rem assumenda. Nesciunt
+                    exercitationem esse minima quaerat cupiditate, nam at reiciendis voluptates. Et delectus aspernatur
+                    quaerat ipsa fugiat sunt nemo, nisi voluptatem voluptates sapiente, commodi quidem, doloremque
+                    facere veritatis. Sapiente corporis omnis expedita voluptatem dolores reprehenderit quasi quaerat
+                    ullam modi dicta labore quam commodi, neque eum perferendis inventore quod, aperiam delectus
+                    consequatur, pariatur fugit. Magnam eveniet recusandae necessitatibus harum nesciunt voluptatibus
+                    provident. Rerum dolorem quod ab optio deleniti inventore sunt necessitatibus dicta omnis mollitia,
+                    aliquid ipsam, vero tempore, ipsa atque nam ea natus at reiciendis aut ratione veritatis? Nam, omnis
+                    ex sit, exercitationem reiciendis recusandae harum saepe dolores, culpa ducimus consectetur
+                    reprehenderit et labore? Et, corporis! Ipsa officiis eos voluptatibus fugit dolorem. Asperiores
+                    voluptates debitis fugiat pariatur ipsum aperiam corporis quod, dicta iste vel harum possimus
+                    veritatis? Molestias cumque repellat natus dolore quod ratione. Nobis nostrum possimus, provident
+                    cupiditate culpa odio dolore alias velit est! Laudantium maxime voluptas rerum praesentium quidem
+                    non suscipit, debitis, accusamus alias perspiciatis labore nam quisquam! Omnis non et, beatae fuga
+                    repudiandae ad quae odit alias voluptatibus? Aperiam ducimus reiciendis soluta, a laudantium amet
+                    accusantium.
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem magni fugit assumenda
+                    aliquam, corrupti consectetur ab recusandae debitis quis! Explicabo, esse? Voluptate atque commodi
+                    tenetur amet, placeat suscipit! Ut numquam aspernatur quam ipsum, ipsa porro sit deserunt officia
+                    assumenda beatae nesciunt at voluptates non commodi placeat. Laboriosam mollitia temporibus
+                    reiciendis quaerat dolorem magni dolore voluptates neque, unde illum esse facilis nam tempora
+                    voluptatum architecto ullam, quod sed suscipit earum molestiae maxime? Sed aperiam aspernatur
+                    recusandae eius modi laborum corporis quasi quia aliquid error, omnis laboriosam soluta accusantium
+                    fugit temporibus nesciunt laudantium eligendi dolorum ullam amet doloribus distinctio. Natus
+                    laboriosam harum eos inventore quos nostrum dolorem praesentium? Adipisci ipsa libero cum dolor,
+                    incidunt fugit dolorum placeat dolores voluptatum fuga eligendi aut rerum pariatur ea magni
+                    doloribus culpa! Provident, consectetur alias? Eius a excepturi dolorem? Facere at asperiores aut
+                    voluptas molestiae vel tempore assumenda rerum fuga praesentium suscipit minima, placeat soluta qui
+                    numquam voluptates illo earum quod magnam est nemo explicabo autem. Explicabo quia pariatur adipisci
+                    hic nisi id facilis veritatis obcaecati debitis voluptatum laudantium quas sint, beatae quos natus
+                    eligendi eaque repudiandae nobis dolorum? Eius ab, sunt adipisci rerum asperiores deserunt animi
+                    placeat quam quo possimus, vel facere aspernatur dolor.
+                </p>
+            </div>
         </section>
 
         <!--=============== SERVICES ===============-->
@@ -175,6 +362,10 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="./assets/js/main.js"></script>
+
+    <!--=============== ionicon link  =============-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
